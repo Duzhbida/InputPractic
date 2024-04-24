@@ -47,19 +47,25 @@ header{
 .register>*{
     margin-bottom: 15px;
 }
+.radio-kavkaz1,
+.radio-kavkaz2{display: inline-block;
+position: relative;}
 .radio-kavkaz1::after{
-    display: inline-block;
     width: 70px;
     height: 70px;
     content: "E-mail";
-    vertical-align: middle;
 }
 .radio-kavkaz2::after{
-    display: inline-block;
     width: 70px;
     height: 70px;
     content: "Phone";
     vertical-align: middle;
+}
+.radio-kavkaz1::after,
+.radio-kavkaz2::after{
+    position: absolute;    
+    top: 22px;
+    left: 20px;
 }
 .register>label>input:not(input[type="radio"]) {
     height: 50px;
